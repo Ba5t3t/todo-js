@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        
+        <title>ToDoList</title>
+    </head>
+    <body>
+        <div class="todo-app">
+            
+            <div class="control">
+                <input class="field" type="text" placeholder="+   Write down your task here">
+                <button class="add">Add a task</button>
+            </div>
+            
+            <div class="tasks">
+                <div class="section-title"><h2>Current tasks</h2><button class="delete-all" onclick="clearAllCurrent()">Clear all</button></div>
+                <ul class="current-tasks-list"></ul>
+            </div>
+
+            <div class="container">
+                <div class="section-title"><h2>Completed tasks</h2><button class="delete-all" onclick="clearAllCompleted()">Clear all</button></div>
+                <ul class="completed-tasks-list"></ul>
+            </div>
+
+            <div class="container">
+                <div class="section-title">
+                    <h2>Deleted tasks</h2>
+                    <button class="delete-all" onclick="clearAllDeleted()">Clear all</button>
+                </div>
+                <ul class="deleted-tasks-list"></ul>
+            </div>
+        </div> 
+        <script src="todo.js"></script>  
+    </body>
+</html>
